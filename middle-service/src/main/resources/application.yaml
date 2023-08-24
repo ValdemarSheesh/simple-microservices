@@ -1,0 +1,23 @@
+server:
+  port: 8090
+
+grpc:
+  server:
+    port: 5000
+
+spring:
+  application:
+    name: middle-service
+  servlet:
+    multipart:
+      enabled: true
+      max-request-size: 256MB
+      max-file-size: 256MB
+  data:
+    mongodb:
+      authentication-database: admin
+      username: atink
+      database: document_data
+      password: atink
+      port: 27017
+      host: localhost
